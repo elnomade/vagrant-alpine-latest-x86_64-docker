@@ -1,7 +1,7 @@
-vagrant-alpine-3.3-x86_64-docker
+vagrant-alpine-latest-x86_64-docker
 ================================
 
-Vagrant Box for Alpine 3.3 with Docker
+Vagrant Box for Alpine 3.4 with Docker
 
 Includes:
 
@@ -22,6 +22,6 @@ to make full use of this Vagrant box:
 Create a [VirtualBox](https://www.virtualbox.org/wiki/Downloads) VM 
 with [Vagrant](https://www.vagrantup.com/):
 
-    vagrant init pulsesecure/alpine-3.3-x86_64-docker
+    vagrant init elnomade/alpine-latest-x86_64-docker
     vagrant up --provider virtualbox
     vagrant ssh
