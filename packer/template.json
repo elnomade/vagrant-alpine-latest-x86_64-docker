@@ -16,9 +16,9 @@
       "hard_drive_interface": "sata",
       "headless": false,
       "http_directory": "http",
-      "iso_checksum": "af766ac6221c6f5b471ca388be22df81ac6f21be37486ba6846f115d1798528a",
+      "iso_checksum": "379392ec2cf54ce5755575090f5ea0d2261d7c427e37b4c0244ecea1cf91819b",
       "iso_checksum_type": "sha256",
-      "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.3/releases/x86_64/alpine-3.3.3-x86_64.iso",
+      "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.4/releases/x86_64/alpine-3.4.2-x86_64.iso",
       "shutdown_command": "sudo /sbin/poweroff",
       "ssh_password": "vagrant",
       "ssh_username": "vagrant",
@@ -31,7 +31,7 @@
       "virtualbox_version_file": ".vbox_version"
     }
   ],
-  "description": "Alpine Linux 3.3 x86_64 With Docker",
+  "description": "Alpine Linux 3.4 x86_64 with Docker",
   "post-processors": [
     [
       {
@@ -39,12 +39,12 @@
         "type": "vagrant"
       },
       {
-        "artifact": "pulsesecure/alpine-3.3-x86_64-docker",
+        "artifact": "elnomade/alpine-latest-x86_64-docker",
         "artifact_type": "vagrant.box",
         "metadata": {
           "provider": "virtualbox",
-          "description": "[Alpine Linux](http://alpinelinux.org) v3.3.3 with Docker\n\n[Packer Template](https://github.com/pulsesecure/vagrant-alpine-3.3-x86_64-docker)",
-          "version": "3.3.3.1"
+          "description": "[Alpine Linux](http://alpinelinux.org) v3.4 with Docker\n\n[Packer Template](https://github.com/elnomade/vagrant-alpine-latest-x86_64-docker)",
+          "version": "3.4.2"
         },
         "only": ["virtualbox-iso"],
         "type": "atlas"
@@ -70,7 +70,7 @@
     }
   ],
   "push": {
-    "name": "pulsesecure/alpine-3_3-x86_64-docker",
+    "name": "elnomade/alpine-latest-x86_64-docker",
     "vcs": true
   }
 }

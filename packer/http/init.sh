@@ -25,7 +25,7 @@ EOF
 rc-update --quiet add networking boot
 
 # Setup APK repo now so we can install more things, use CDN for APKs
-/sbin/setup-apkrepos http://dl-cdn.alpinelinux.org/alpine/v3.3/main
+/sbin/setup-apkrepos http://dl-cdn.alpinelinux.org/alpine/v3.4/main
 
 # Setup SSHD
 /sbin/setup-sshd -c openssh
